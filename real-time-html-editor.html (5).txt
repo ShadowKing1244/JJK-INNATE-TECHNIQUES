@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gacha Spinner - Non-Clan Innate Techniques</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('https://i.imgur.com/yLFC4x9.jpg');
+        background-size: cover;
+        background-position: center;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container {
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+    }
+    h1 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 20px;
+        background-color: #ff0;
+        color: #000;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    button:hover {
+        background-color: #ffa500;
+    }
+    #result {
+        margin-top: 20px;
+        font-size: 24px;
+        color: #333;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Click the button to spin and reveal your innate technique!</h1>
+    <button onclick="spinGacha()">Spin</button>
+    <div id="result"></div>
+</div>
+<script>
+    function spinGacha() {
+        const techniques = [
+            "Straw Doll Technique - Nobara Kugisaki",
+            "Shrine - Sukuna",
+            "Jogo's Pyrokinesis",
+            "Hanami's Plant Manipulation",
+            "Ratio Technique - Kento Nanami",
+            "Idle Transfiguration - Mahito",
+            "Tool Manipulation - Momo Nishimiya",
+            "Construction - Mai Zenin & Yorozu",
+            "Boogie Woogie - Aoi Todo",
+            "Gakuganji's Sound Amplification",
+            "Rot Technique - Eso & Kechizu",
+            "Puppet Manipulation - Kokichi Muta",
+            "Cursed Spirit Manipulation - Suguru Geto",
+            "Immortality - Tengen",
+            "Cloning Technique - Bag-mask Curse User",
+            "Auspicious Beasts Summon - Takuma Ino",
+            "Inverse - Jiro Awasaka",
+            "Séance Technique - Ogami",
+            "Black Bird Manipulation - Mei Mei",
+            "Water Manipulation - Dagon",
+            "Photography Manipulation - Nanako Hasaba",
+            "Miracles - Haruta Shigemo",
+            "Wound Sealing - Arata Nitta",
+            "Ice Formation - Uraume",
+            "Blazing Courage - Ogi Zenin",
+            "Stone Hand Manipulation - Chojuro Zenin",
+            "Paralysis Gaze - Ranta Zenin",
+            "Gigantic Fist Technique - Jinichi Zenin",
+            "Love Rendezvous - Kirara Hoshi",
+            "Scorpion Tail - Remi",
+            "Funnyman - Fumihiko Takaba",
+            "Sky Manipulation - Takako Uro",
+            "Cursed Energy Discharge - Ryu Ishigori",
+            "G Warstaff - Charles Bernard",
+            "Pachinko Domain - Kinji Hakari",
+            "Star Rage - Yuki Tsukumo",
+            "Antigravity System - Kaori Itadori",
+            "Technique Extinguishment - The Angel",
+            "Solo Forbidden Area - Utahime Iori",
+            "Mythical Beast Amber - Hajime Kashimo",
+            "Kokichi's Mechamaru Puppets (Heavenly Restriction)",
+            "Maki's Enhanced Physical Abilities (Heavenly Restriction)"
+        ];
+
+        const randomIndex = Math.floor(Math.random() * techniques.length);
+        const selectedTechnique = techniques[randomIndex];
+
+        document.getElementById('result').innerText = `You got: ${selectedTechnique}`;
+    }
+</script>
+</body>
+</html>
